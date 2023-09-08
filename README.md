@@ -1,5 +1,5 @@
 ## what is this project? 
-This is a verry basic project outline to save some tedium time when setting up an assembly project as a basic example
+This is a verry basic project outline to save some tedium time when setting up an assembly project and as a basic example
 
 ## how to use
 
