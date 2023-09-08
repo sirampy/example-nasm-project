@@ -8,7 +8,8 @@
           global    _start
 
           section   .text
-_start:   mov       rdi, 1                  ; file handle 1 is stdout
+_start:   mov       rax, 1                  ; system call for write
+          mov       rdi, 1                  ; file handle 1 is stdout
           mov       rsi, message            ; address of string to output
           mov       rdx, 13                 ; number of bytes
           syscall                           ; invoke operating system to do the write
@@ -17,4 +18,4 @@ _start:   mov       rdi, 1                  ; file handle 1 is stdout
           syscall                           ; invoke operating system to exit
 
           section   .data
-message:  dd        "Hello, World", 10, 10      ; note the newline at the end
+message:  db        "Hello, World", 10      ; note the newline at the end
